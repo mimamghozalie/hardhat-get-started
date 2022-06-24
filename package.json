@@ -2,7 +2,9 @@
   "name": "hardhat-project",
   "scripts": {
     "test": "npx hardhat test",
-    "node": "node scripts/sample-script.js"
+    "node": "node scripts/sample-script.js",
+    "deploy": "npx hardhat run scripts/deploy.js",
+    "deploy:bsctestnet": "npx hardhat run --network bsctestnet scripts/deploy.js"
   },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.6",
